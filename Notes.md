@@ -115,3 +115,6 @@
 ```
     select
 ```    
+## server :
+    A server is a computer program or device that provides a service to another computer program and its user, also known as the client
+    

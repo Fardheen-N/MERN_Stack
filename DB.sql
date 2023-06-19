@@ -1,0 +1,17 @@
+create table student(Id int,Name varchar ,Gender varchar);
+insert into student values(1,'chandra','M');
+insert into student values(2,'ani','M');
+insert into student values(3,'dhivya','F');
+alter table student add email varchar(10);
+update student set email = "chandra@gmail.com" where Id = 1;
+update student set email = "anikris@gmail.com" where Id = 2;
+update student set email = "parami@gmail.com" where Id = 3;
+insert into student values(4,'akilan','M','akilan@gmail.com');
+insert into student values(5,'Gokul raj','M','goose@gmail.com');
+insert into student values(6,'fayaz','M','fataz@gmail.com');
+insert into student values(7,'samantha','F','sam@gmail.com');
+insert into student values(8,'dharsan','M','PG@gmail.com');
+insert into student values(9,'dhanush','M','DDM@gmail.com');
+insert into student values(10,'Ana de armas','F','anadeArmas@gmail.com');
+select * from student order by Name;
+select Name from student where Gender = 'M';
