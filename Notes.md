@@ -78,4 +78,40 @@
     many to one 
     many to many
 ```   
-## 
+## sql query commands :
+    DDL-Data definition lang
+    DML-Data manupulation lang
+    TCL-transaction control lang
+    DCL-Data control lang
+    DQL-Data query lang
+
+### DDL
+```
+    create
+    Alter   
+    Drop
+    Truncate
+```
+### DML
+```
+    insert
+    update 
+    delete
+```
+### DCL
+```
+    grant
+    revoke
+```    
+
+### TCL
+```
+    commit
+    rollback
+    save point
+```
+
+### DQL
+```
+    select
+```    
