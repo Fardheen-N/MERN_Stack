@@ -1,0 +1,180 @@
+[{
+  "_id": {
+    "$oid": "64916d0aaea9f7f7fc0fb4a5"
+  },
+  "id": 1,
+  "name": "chandra",
+  "gender": "M",
+  "age": 20,
+  "job": "SDE"
+},
+{
+  "_id": {
+    "$oid": "649171aaaea9f7f7fc0fb4a8"
+  },
+  "id": 3,
+  "name": "dhivya",
+  "gender": "F",
+  "age": 20,
+  "job": "Actress"
+},
+{
+  "_id": {
+    "$oid": "649171aaaea9f7f7fc0fb4a9"
+  },
+  "id": 4,
+  "name": "Ana de Armas",
+  "gender": "F",
+  "age": 35,
+  "job": "Actress"
+},
+{
+  "_id": {
+    "$oid": "649174c1aea9f7f7fc0fb4aa"
+  },
+  "id": 2,
+  "name": "krishna",
+  "gender": "M",
+  "age": 19,
+  "job": "SDE"
+},
+{
+  "_id": {
+    "$oid": "64917afaaea9f7f7fc0fb4ab"
+  },
+  "id": 5,
+  "name": "waseem",
+  "gender": "M",
+  "age": 19,
+  "job": "Block chain"
+},
+{
+  "_id": {
+    "$oid": "64917afaaea9f7f7fc0fb4ac"
+  },
+  "id": 6,
+  "name": "samantha",
+  "gender": "F",
+  "age": 36,
+  "job": "Actress"
+},
+{
+  "_id": {
+    "$oid": "64917afaaea9f7f7fc0fb4ad"
+  },
+  "id": 7,
+  "name": "robert downye",
+  "gender": "M",
+  "age": 43,
+  "job": "Iron Man"
+},
+{
+  "_id": {
+    "$oid": "64917afaaea9f7f7fc0fb4ae"
+  },
+  "id": 8,
+  "name": "zoro",
+  "gender": "M",
+  "age": 21,
+  "job": "Pirate"
+},
+{
+  "_id": {
+    "$oid": "64917afaaea9f7f7fc0fb4af"
+  },
+  "id": 9,
+  "name": "luffy",
+  "gender": "M",
+  "age": 19,
+  "job": "Pirate"
+},
+{
+  "_id": {
+    "$oid": "64917afaaea9f7f7fc0fb4b0"
+  },
+  "id": 10,
+  "name": "sanji",
+  "gender": "M",
+  "age": 21,
+  "job": "pirate"
+},
+{
+  "_id": {
+    "$oid": "64917afaaea9f7f7fc0fb4b1"
+  },
+  "id": 11,
+  "name": "Trafalgar law",
+  "gender": "M",
+  "age": 26,
+  "job": "Pirate"
+},
+{
+  "_id": {
+    "$oid": "64917d06176550a397b560f7"
+  },
+  "id": 12,
+  "name": "Nami",
+  "gender": "F",
+  "age": 19,
+  "job": "Pirate"
+},
+{
+  "_id": {
+    "$oid": "64917d06176550a397b560f8"
+  },
+  "id": 13,
+  "name": "Robin",
+  "gender": "F",
+  "age": 30,
+  "job": "Archiolagist"
+},
+{
+  "_id": {
+    "$oid": "64917d06176550a397b560f9"
+  },
+  "id": 14,
+  "name": "Brook",
+  "gender": "M",
+  "age": 90,
+  "job": "Pirate"
+},
+{
+  "_id": {
+    "$oid": "64917d06176550a397b560fa"
+  },
+  "id": 15,
+  "name": "Chopper",
+  "gender": "M",
+  "age": 17,
+  "job": "Pirate"
+},
+{
+  "_id": {
+    "$oid": "64917d06176550a397b560fb"
+  },
+  "id": 16,
+  "name": "Rob Lucci",
+  "gender": "M",
+  "age": 30,
+  "job": "Marine"
+},
+{
+  "_id": {
+    "$oid": "64917d06176550a397b560fc"
+  },
+  "id": 17,
+  "name": "Boa hancock",
+  "gender": "F",
+  "age": 31,
+  "job": "Pirate"
+},
+{
+  "_id": {
+    "$oid": "64917d06176550a397b560fd"
+  },
+  "id": 18,
+  "name": "Mihawk",
+  "gender": "M",
+  "age": 41,
+  "job": "Marine"
+}]
