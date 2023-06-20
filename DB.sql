@@ -15,3 +15,9 @@ insert into student values(9,'dhanush','M','DDM@gmail.com');
 insert into student values(10,'Ana de armas','F','anadeArmas@gmail.com');
 select * from student order by Name;
 select Name from student where Gender = 'M';
+
+create table tutor(Id int,Name varchar,Gender varchar);
+insert into tutor values(1,'Raylieh','M');
+insert into tutor values(2,'raiden','F');
+select * from tutor ;
+select student.Name,tutor.Name from student inner join tutor on student.Gender = tutor.Gender;
