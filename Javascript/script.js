@@ -33,7 +33,7 @@ for( i in list){
 
 let names = ['ani','moon','parami','waseem','luffy']
 console.log(names.slice(0,3))
-let copy = names.splice(0,3)
+let copy = names.slice(0,3)
 console.log(copy)
 console.log(names)
 
@@ -45,3 +45,8 @@ let ar = 'abcdefghijklmnop'
 console.log(ar.split(""))
 let arr = [1,2,3,4,'sece','moon']
 console.log(arr.join(""))
+console.log(ar.toUpperCase())
+
+for( i in names){
+    console.log(names[i].charAt(0).toUpperCase()+names[i].slice(1))
+}
