@@ -117,4 +117,43 @@
 ```    
 ## server :
     A server is a computer program or device that provides a service to another computer program and its user, also known as the client
+
+## Java Script
+    let,const are ES6(Egma script 2016) features which bought after 2016.
+
+    var can be redeclared and assigned but let cannot be redeclared.
+    var has no block scope but let has block scope.
+
+    Eg: var a =10;
+        var a=20; gives no error.
+        let a=10;
+        let a=20; gives error.
+
+    Eg: let s = 1/0;
+        console.log(s);
+        o/p : infinity.
+
+    let s  = "12"*12   in arithmetic operation js will try to convert string into number in this case "12" can be converted into 12 so arithmetic operation is done
+    console.log(s);
+
+    but in this case
+    let b = "12a"*12  here "12a" is not possible to converted into number so NaN is returned
+    console.log(b);
+
+    addition of string and number results always in string type
+
+    let a = 52n
+    here , n specifies 52 as bigint.
+
+    let a = 'Akil'
+    let b = "Akil"
+    let c = 'A'
+    let d = "A"
+    the above variables a,b,c,d are strings in javascript.
+
+    Data Type : Number (float, int, double, long, infinity, -infinity, NAN(Not a number) are called as number in javascript)
+      Bigint
+            String
+            null
+            Boolean
     
