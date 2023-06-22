@@ -152,8 +152,9 @@
     the above variables a,b,c,d are strings in javascript.
 
     Data Type : Number (float, int, double, long, infinity, -infinity, NAN(Not a number) are called as number in javascript)
-      Bigint
+            Bigint
             String
             null
             Boolean
-    
+    when we use for in loop for a array its give index as key
+    for of loops gives the value of the array
