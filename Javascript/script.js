@@ -27,7 +27,7 @@ list.shift()
 list.push(4,5,6,7,8)
 console.log(list)
 
-for( i in list){
+for(let i in list){
     console.log(list[i])
 }
 
@@ -47,6 +47,6 @@ let arr = [1,2,3,4,'sece','moon']
 console.log(arr.join(""))
 console.log(ar.toUpperCase())
 
-for( i in names){
+for(let i in names){
     console.log(names[i].charAt(0).toUpperCase()+names[i].slice(1))
 }
