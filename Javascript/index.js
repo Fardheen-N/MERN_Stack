@@ -1,3 +1,4 @@
+import user_data,{addUser,editUser,editMultipleUser,deleteUser, } from "./userModule"
 let a ="5"-2
 console.log(a)
 let str1 = 'is'
@@ -37,4 +38,5 @@ console.log(details.address?.city) // '?' is known as optional checking - it che
 for (const key in details){
     console.log(key,details[key])
 }
+
 
