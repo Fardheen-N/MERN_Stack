@@ -1,11 +1,11 @@
 {
    "name":"zoro",
-   "age":"21",
+   "age":21,
    "address" : {
     "Area":"ramanathapuram",
     "district":"coimbatore",
     "state":"tamilnadu"
    },
    "profession":"pirate",
-   "Crew-name":"straw hats"
+   "crewname" :"straw hats"
 }
