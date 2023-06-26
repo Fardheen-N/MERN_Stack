@@ -1,78 +1,63 @@
-const fs = require('fs')
-// const {add,multi}= require('./app');
-// // console.log(fs)
-// // fs.readFile(`${__dirname}/states.txt`,(err,data)=>{
-// //     if(err) console.log("Error");
-// //     else console.log(data.toString());
-// // })
-// // const inputData = 'bankai kathon karamath shinju ⚔️'
-// // fs.writeFile(`${__dirname}/bleach.txt`,inputData,(err)=>{
-// //     if(err) console.log("error while writing")
-// //     else console.log("done writing");
-// // })
+const fs = require('fs');
 
-// // fs.readFile(`${__dirname}/bleach.txt`,(err,data)=>{
-// //     if(err) console.log("Error");
-// //     else console.log(data.toString());
-// // })
-// const name = 'chandraaaaaaaaaa'
-// console.log(`Hello ${name}`);
+function read(filePath) {
+  return new Promise((resolve, reject) => {
+    fs.readFile(filePath, (err, data) => {
+      if (err) {
+        reject("Failed read");
+      } else {
+        resolve(data);
+      }
+    });
+  });
+}
 
-function read(filepath){
-    return new Promise((resolve,reject) => {
-        fs.readFile(filepath,(err,data) => {
-            if(err) reject("Failed during read")
-            else resolve(data)
-        })
-    })
-} 
+function write(filePath, inputData) {
+  return new Promise((resolve, reject) => {
+    fs.writeFile(filePath, inputData, (err) => {
+      if (err) {
+        reject("Failed to write");
+      } else {
+        resolve();
+      }
+    });
+  });
+}
 
-function write(input,filepath){
-    return new Promise((resolve,reject) => {
-        fs.writeFile(input,filepath,(err) => {
-            if(err) reject("Failed during write")
-            else resolve('written')
-        })
-    })
-} 
+function mapFiles(filePath, state, capital) {
+  const pairs = state.map((state, index) => `${state}=>${capital[index]}`).join("\n");
+  return write(filePath, pairs);
+}
 
-const input = 'yokoso vathakshiva soul socity hado-no 99'
-read(`bleach.txt`)
-.then(()=> write('bleach.txt',input))
-.then((data)=>console.log(data.toString()))
-.catch((err)=>console.log("Some error occured"))
+const state = ["TN", "JH", "MH", "KL", "AP", "MP", "UP", "HP", "JK", "KA"];
+const capital = ["Chennai", "Ranchi", "Mumbai", "Thiruvananthapuram", "Amaravati", "Bhopal", "Lucknow", "Shimla", "Srinagar", "Bangalore"];
 
-// // read(`${__dirname}/bleach.txt`)
-// // console.log(write(input,`${__dirname}/bleach.txt`))
-
-// const fs = require('fs')
-
-// function read(filepath){
-//     return new Promise((resolve,reject) => {
-//         fs.readFile(filepath,(err,data) => {
-//             if(err) reject("Failed during read")
-//             else resolve(data)
-//         })
-//     })
-// } 
-
-// function write(filepath,update){
-//     return new Promise((resolve,reject) => {
-//         fs.writeFile('bleach.txt', update, (err) => {
-//             if (err) reject("error");
-//             else resolve('The file has been saved!');
-//           });
-//     })
-// } 
-
-
-// read('bleach.txt')
-// .then((data)=>{
-//     console.log(data.toString())
-//     write('bleach.txt',"Ani!!")
-// .then((data)=>{
-//     console.log(data.toString())
-// })
-// .catch((err)=>console.log("Some error occured"))
-// })
-// .catch((err)=>console.log(err))
+write(`${__dirname}/state.txt`, state.join("\n"))
+  .then(() => {
+    console.log("State written");
+    return write(`${__dirname}/capital.txt`, capital.join("\n"));
+  })
+  .then(() => {
+    console.log("Capital written");
+    return read(`${__dirname}/state.txt`);
+  })
+  .then((data) => {
+    console.log("***State read*******");
+    console.log(data.toString());
+    return read(`${__dirname}/capital.txt`);
+  })
+  .then((data) => {
+    console.log("***Capital read******");
+    console.log(data.toString());
+    return mapFiles(`${__dirname}/state-capital.txt`, state, capital);
+  })
+  .then(() => {
+    return read(`${__dirname}/state-capital.txt`);
+  })
+  .then((data) => {
+    console.log("***State-capital read****");
+    console.log(data.toString());
+  })
+  .catch((err) => {
+    console.log(err);
+  });

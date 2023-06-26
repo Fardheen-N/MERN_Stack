@@ -1,0 +1,10 @@
+TN=>Chennai
+JH=>Ranchi
+MH=>Mumbai
+KL=>Thiruvananthapuram
+AP=>Amaravati
+MP=>Bhopal
+UP=>Lucknow
+HP=>Shimla
+JK=>Srinagar
+KA=>Bangalore
