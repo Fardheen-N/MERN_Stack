@@ -1,6 +1,8 @@
-const http = require('http')
+const express = require('express');
+const router = require('./router');
+const app = express();
 const port = 3000
-http.createServer((req,res)=>{
-    res.end('Connected to the server')
-})
-.listen(port,()=> console.log(`listening on port : ${port}`))
+app.use(router)
+app.listen(port,()=>{
+    console.log('Connected to the server');
+});
